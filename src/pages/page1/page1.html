@@ -1,0 +1,24 @@
+<ion-header class="headerBackground">
+    <ion-navbar>
+        <ion-row>
+            <ion-col text-center class="col-title">
+                <ion-title>Ezar Login</ion-title>
+            </ion-col>
+        </ion-row>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list inset>
+          <ion-item>
+              <ion-label floating>Username</ion-label>
+              <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label floating>Password</ion-label>
+             <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+          </ion-item>
+          <button ion-button full (click)="login()">
+              <ion-icon name="add"></ion-icon>Login</button>
+  </ion-list>
+
+</ion-content>

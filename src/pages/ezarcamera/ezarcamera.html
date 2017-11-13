@@ -1,0 +1,33 @@
+<ion-header class="headerBackground">
+    <ion-navbar>
+        <ion-row>
+            <ion-col text-center class="col-title">
+                <ion-title>Ezar Camera</ion-title>
+            </ion-col>
+        </ion-row>
+    </ion-navbar>
+</ion-header>
+<ion-content padding id="ezarcontent">
+</ion-content>
+<ion-footer class="footer-background">
+  <ion-row class="viewImag-background">
+      <ion-col width-20 class="thambil" *ngFor="let images of MYImages">
+          <ion-card class="block">
+              <ion-icon name="close" class="deleteIcon" (click)="removePhoto(images)"></ion-icon>
+              <img [src]="images.name" class="setimg" (click)="previewImage(images.base64)"/>
+          </ion-card>
+      </ion-col>
+  </ion-row>
+  <ion-row class="row-footer-btn">
+      <ion-col text-left>
+          <button class="btn-cameraBack" ion-button color="dark" (click)="reverseCamera()">
+              <ion-icon name="reverse-camera"></ion-icon>
+          </button>
+      </ion-col>
+      <ion-col text-right>
+          <button class="btn-cameraVideo" ion-button color="danger" (click)="takePhotos()">
+              <ion-icon name="camera"></ion-icon>
+          </button>
+      </ion-col>
+  </ion-row>
+</ion-footer>

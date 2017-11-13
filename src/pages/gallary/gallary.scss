@@ -1,0 +1,20 @@
+page-photos {
+
+  /* ---------------- Header  Ui -------------------------*/
+    .back-button{
+      color:#FFF;
+    }
+    .toolbar-title{
+      color:#FFF;
+    }
+    .col-title{
+      min-width: 80%;
+    } 
+    .toolbar-background{
+      /*padding: 0px;*/
+      background: -webkit-linear-gradient(top,#FF532F, #FF9331) !important; 
+        background: -moz-linear-gradient(bottom,#FF532F, #FF9331)!important; 
+        background: linear-gradient(to bottom,#FF532F, #FF9331)!important; 
+    }
+  /*-------------- End Header  Ui ------------------------*/
+}
